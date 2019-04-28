@@ -1,0 +1,16 @@
+PODS:
+  - MyFramework (0.0.2)
+
+DEPENDENCIES:
+  - MyFramework (from `./MyPods/HansSwiftFramework/`)
+
+EXTERNAL SOURCES:
+  MyFramework:
+    :path: ./MyPods/HansSwiftFramework/
+
+SPEC CHECKSUMS:
+  MyFramework: 7b1ca720c977a9e958b37fd6a414d698ae78182a
+
+PODFILE CHECKSUM: 365cfdd948c46fa32352a1ece60e6a2e30be9abc
+
+COCOAPODS: 1.4.0

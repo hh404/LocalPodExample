@@ -1,0 +1,27 @@
+{
+  "name": "MyFramework",
+  "version": "0.0.2",
+  "summary": "mama ya.",
+  "description": "A much much longer description of MyFramework",
+  "homepage": "http://www.bidu.com",
+  "license": "Copyleft",
+  "authors": {
+    "huangjianwu": "hjw231_2003@sina.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}",
+    "HansSwiftFramework/**/*.swift"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "resources": "HansSwiftFramework/**/*.{png,xib,bundle,xcassets,strings}",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}
