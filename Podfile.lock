@@ -1,16 +1,26 @@
 PODS:
-  - MyFramework (0.0.2)
+  - HansCommonFramework (0.0.1)
+  - MyFramework (0.0.2):
+    - HansCommonFramework
+    - SwiftyJSON
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
+  - HansCommonFramework (from `./MyPods/HansCommonFramework/`)
   - MyFramework (from `./MyPods/HansSwiftFramework/`)
+  - SwiftyJSON
 
 EXTERNAL SOURCES:
+  HansCommonFramework:
+    :path: ./MyPods/HansCommonFramework/
   MyFramework:
     :path: ./MyPods/HansSwiftFramework/
 
 SPEC CHECKSUMS:
-  MyFramework: 7b1ca720c977a9e958b37fd6a414d698ae78182a
+  HansCommonFramework: 42d51ee5f60a8490df5a93347c03f919bdd3ff05
+  MyFramework: de8082b6fd836115bd4c654259ad6e532260ead3
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 365cfdd948c46fa32352a1ece60e6a2e30be9abc
+PODFILE CHECKSUM: ea7f57e26f506b93503243775c549ac3e848b0c9
 
 COCOAPODS: 1.4.0

@@ -1,0 +1,26 @@
+{
+  "name": "HansCommonFramework",
+  "version": "0.0.1",
+  "summary": "mama ya..",
+  "description": "A much much longer description of MyFramework",
+  "homepage": "http://www.bidu.com",
+  "license": "MIT",
+  "authors": {
+    "huangjianwu": "hjw231_2003@sina.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}",
+    "HansCommonFramework/**/*.swift"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

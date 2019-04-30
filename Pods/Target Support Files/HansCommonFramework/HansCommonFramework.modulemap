@@ -1,0 +1,6 @@
+framework module HansCommonFramework {
+  umbrella header "HansCommonFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

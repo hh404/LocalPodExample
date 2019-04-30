@@ -7,7 +7,25 @@
 		<key>LocalPodExample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EC9EB6C82273E12400CA94E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC9EB6DC2273E12500CA94E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC9EB6E72273E12600CA94E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

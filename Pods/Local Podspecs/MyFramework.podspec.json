@@ -18,6 +18,14 @@
   ],
   "exclude_files": "Classes/Exclude",
   "resources": "HansSwiftFramework/**/*.{png,xib,bundle,xcassets,strings}",
+  "dependencies": {
+    "SwiftyJSON": [
+
+    ],
+    "HansCommonFramework": [
+
+    ]
+  },
   "platforms": {
     "osx": null,
     "ios": null,

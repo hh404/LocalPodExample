@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import HansCommonFramework
 
 public class LangHelper: NSObject {
     
@@ -45,5 +46,20 @@ public class LangHelper: NSObject {
     public func cassioIdentifierBundle() -> Bundle? {
         let bundle: Bundle = (Bundle(identifier: "org.cocoapods.MyFramework") ?? nil)!
         return bundle
+    }
+    
+    public func testJson() {
+        let jsonStr = "[{\"name\": \"hangge\", \"age\": 100, \"phones\": [{\"name\": \"公司\",\"number\": \"123456\"}, {\"name\": \"家庭\",\"number\": \"001\"}]}, {\"name\": \"big boss\",\"age\": 1,\"phones\": [{ \"name\": \"公司\",\"number\": \"111111\"}]}]"
+        
+        if let jsonData = jsonStr.data(using: String.Encoding.utf8, allowLossyConversion: false) {
+            //.........
+            print(jsonData)
+        }
+    }
+    
+    public func testCommonFramework() {
+        //
+        let c = Common()
+        c.myCommonFuction()
     }
 }

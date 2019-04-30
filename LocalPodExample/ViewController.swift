@@ -8,6 +8,7 @@
 
 import UIKit
 import MyFramework
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let lng = LangHelper()
         let f = lng.getName()
-        
+        lng.testJson()
+        self.testJson()
 //        let amazingBundle = Bundle(for: MyFramework.self)
 //        guard let image = UIImage(named: "MyImage", in: amazingBundle, compatibileWith: nil) else {
 //
@@ -36,6 +38,8 @@ class ViewController: UIViewController {
         self.imageFromFramework()
         self.textFromFramework()
         print(f)
+        
+        lng.testCommonFramework()
     }
 
     
@@ -52,6 +56,15 @@ class ViewController: UIViewController {
         let bundle = Bundle.init(for: LangHelper.self)
         let text = NSLocalizedString("cp.title", tableName: "Cassio", bundle: bundle, value: "", comment: "")
         print(text)
+    }
+    
+    func testJson() {
+        let jsonStr = "[{\"name\": \"hangge\", \"age\": 100, \"phones\": [{\"name\": \"公司\",\"number\": \"123456\"}, {\"name\": \"家庭\",\"number\": \"001\"}]}, {\"name\": \"big boss\",\"age\": 1,\"phones\": [{ \"name\": \"公司\",\"number\": \"111111\"}]}]"
+        
+        if let jsonData = jsonStr.data(using: String.Encoding.utf8, allowLossyConversion: false) {
+            //.........
+            print(jsonData)
+        }
     }
 }
 

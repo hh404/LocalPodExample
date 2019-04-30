@@ -7,6 +7,8 @@ target 'LocalPodExample' do
 
   # Pods for LocalPodExample
 pod 'MyFramework', :path => './MyPods/HansSwiftFramework/'
+pod 'HansCommonFramework', :path => './MyPods/HansCommonFramework/'
+pod 'SwiftyJSON'
   target 'LocalPodExampleTests' do
     inherit! :search_paths
     # Pods for testing
